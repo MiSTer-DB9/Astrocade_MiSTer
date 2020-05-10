@@ -16,3 +16,5 @@ set_global_assignment -name SYSTEMVERILOG_FILE Astrocade_input.sv
 set_global_assignment -name VHDL_FILE bram.vhd
 set_global_assignment -name VHDL_FILE bally.vhd
 set_global_assignment -name SYSTEMVERILOG_FILE Astrocade.sv
+set_global_assignment -name VERILOG_FILE joydb9md.v
+set_global_assignment -name VERILOG_FILE joydb15.v
