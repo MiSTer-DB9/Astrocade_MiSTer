@@ -8,5 +8,5 @@ set_global_assignment -name SYSTEMVERILOG_FILE rtl/Astrocade_input.sv
 set_global_assignment -name VHDL_FILE rtl/bram.vhd
 set_global_assignment -name VHDL_FILE rtl/bally.vhd
 set_global_assignment -name SYSTEMVERILOG_FILE Astrocade.sv
-set_global_assignment -name VERILOG_FILE joydb9md.v
-set_global_assignment -name VERILOG_FILE joydb15.v
+set_global_assignment -name VERILOG_FILE rtl/joydb9md.v
+set_global_assignment -name VERILOG_FILE rtl/joydb15.v
