@@ -49,7 +49,7 @@ module emu
 	input         RESET,
 
 	//Must be passed to hps_io module
-	inout  [48:0] HPS_BUS,
+	inout  [45:0] HPS_BUS,
 
 	//Base video clock. Usually equals to CLK_SYS.
 	output        CLK_VIDEO,
@@ -77,6 +77,8 @@ module emu
 	input  [11:0] HDMI_WIDTH,
 	input  [11:0] HDMI_HEIGHT,
 	output        HDMI_FREEZE,
+	output        HDMI_BLACKOUT,
+	output        HDMI_BOB_DEINT,
 
 `ifdef MISTER_FB
 	// Use framebuffer in DDRAM
@@ -275,6 +277,8 @@ assign BUTTONS   = 0;
 assign VGA_SCALER= 0;
 assign VGA_DISABLE = 0;
 assign HDMI_FREEZE = 0;
+assign HDMI_BLACKOUT = 0;
+assign HDMI_BOB_DEINT = 0;
 
 reg en216p;
 always @(posedge CLK_VIDEO) begin
